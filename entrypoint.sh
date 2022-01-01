@@ -91,7 +91,7 @@ sed -e "/^#/d"\
 echo /wwwroot/${Share_Path}/index.html
 cat /wwwroot/${Share_Path}/index.html
 cp /conf/nginx.conf /etc/nginx/nginx.conf
-chattr +i /etc/nginx/nginx.conf
+
 cd /xraybin
 ./xray run -c ./config.json &
 rm -rf /etc/nginx/sites-enabled/default
